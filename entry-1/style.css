@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url("https://use.typekit.net/hnf3snf.css");
+*
+{
+  text-align: center;
+}
+
+h1 {
+  font-family: Helvetica Neue LT Pro, sans-serif; 
+  font-size: 30px;
+}
+
+.NotoSansJP {
+  font-family: Noto Sans JP, sans-serif; 
+  font-weight: 350;
+  color: red;
+  
+}
+
+h2 { 
+  font-family: Helvetica Neue LT Pro, sans-serif; 
+  font-size: 18px;
+  font-weight: 450;
+  color: red;
+  background-color: 
+}
+
+p {
+  font-family: Helvetica Neue LT Pro, sans-serif; 
+  font-size: 12px;
+  font-weight: 200;
+  width: 250px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: Helvetica Neue LT Pro, sans-serif; 
+  font-size: 15px;
+  font-weight: 200;
+  color: red
+}
+
+ol {
+  width: 300px;
+  margin: 0 auto;
+  font-family: Helvetica Neue LT Pro, sans-serif; 
+  font-size: 12px;
+  font-weight: 200;
+
+}
+
+img {
+  width: 50%
+}
+
