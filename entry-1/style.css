@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 @import url("https://use.typekit.net/hnf3snf.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 *
 {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   font-family: Helvetica Neue LT Pro, sans-serif; 
   font-size: 30px;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .NotoSansJP {
@@ -41,7 +51,7 @@ h3 {
 }
 
 ol {
-  width: 300px;
+  width: 250px;
   margin: 0 auto;
   font-family: Helvetica Neue LT Pro, sans-serif; 
   font-size: 12px;
@@ -53,3 +63,110 @@ img {
   width: 50%
 }
 
+/* CUTBAG */
+
+.CutBagContainer {
+  position: relative;
+  width: 1328px;
+  height: 927px;
+  background-color: #F5D595;
+  margin: 0 auto;
+  
+}
+
+.TopContainer {
+  width: 972px;
+  height: 412px;
+  border: 2px solid #98AD82;
+  position: absolute;
+  top: 74px;
+  left: 96px;
+  border-radius:25px;
+
+}
+
+/* NESTED CONTENTS WITHIN TOPCONTAINER */
+.Box1 {
+  width: 302px;
+  height: 86px;
+  border-right: 2px solid #98AD82;
+  border-bottom: 2px solid #98AD82;
+  /* background-color: rgba(217, 217, 217, .20); */
+  
+}
+
+.Box2 {
+  position: absolute;
+  width: 184px;
+  height: 86px;
+  border-right: 2px solid #98AD82;
+  border-bottom: 2px solid #98AD82;
+  top:0px;
+  left:302px;
+}
+
+.Box3 {
+  position: absolute;
+  width: 484px;
+  border-bottom: 2px solid #98AD82;
+  right:0px;
+  top: 84px;
+}
+/* NESTED WITHIN BOX3 */
+
+.Line1-Box3 {
+  position: absolute;
+  width: 484px;
+  border-bottom: 2px solid #98AD82;
+  bottom: 66px;
+}
+
+.Line2-Box3 {
+  position: absolute;
+  width: 484px;
+  border-bottom: 2px solid #98AD82;
+  bottom: 42px;
+}
+
+.Line3-Box3 {
+  position: absolute;
+  width: 484px;
+  border-bottom: 2px solid #98AD82;
+  bottom: 21px;
+}
+
+.Line4-Box3 {
+  position: absolute;
+  width: 484px;
+  border-bottom: 2px solid #98AD82;
+}
+
+.BottomContainer {
+  width: 972px;
+  height: 229px;
+  border: 2px solid #98AD82;
+  position: absolute;
+  bottom: 200px;
+  left: 96px;
+  border-radius: 25px 25px 25px 0px;
+}
+
+.FinalContainer {
+  width: 673px;
+  height: 145px;
+  border: 2px solid #98AD82;
+  position: absolute;
+  border-radius: 0px 0px 25px 25px;
+  bottom: 57px;
+  left: 96px;
+
+
+}
+.vertical-line {
+  border-right: 2px solid black;
+  opacity: 0.5;
+  height: 927px;
+  display: inline-block;
+  position: absolute;
+  left: 1196px;
+}
