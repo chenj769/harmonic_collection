@@ -1,0 +1,30 @@
+@import url("https://use.typekit.net/hnf3snf.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*
+{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+* {
+    font-family: Helvetica Neue LT Pro, sans-serif; 
+    font-size: 15px;
+    font-weight: 10;
+    margin: 0 auto;
+}
+
+div:hover {
+    transform: scale(170%);
+}
+
+div {
+    width: 200px;
+}

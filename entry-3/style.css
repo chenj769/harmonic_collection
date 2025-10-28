@@ -1,19 +1,106 @@
-.bigbox {
-  background-color: beige;
-  width: 350px;
-  height: 250px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://use.typekit.net/hnf3snf.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-div {
-  width: 100%;
-  height: 50%;
-  background-color: #F5D595;
-  position: relative
+* {
+  margin: 0;
+  padding: 0;
 }
 
-p {}  
+
+body {
+    /* background-image: url(/assets/Intro.png); */
+}
+
+.BackgroundContainer {
+    display: flex;
+    width: 1440px;
+    height: 1024px;
+    background-color: #f5d595;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    display: flex;
+    border: 2px solid black;
+    width: 1200px;
+    height: 717px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Border1 {
+    font-family: Helvetica Neue LT Pro, sans-serif;
+    border: 1px dashed black;
+    width: 1030px;
+    height: 625px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    text-align: left;
+    flex-wrap: wrap;
+    
+}
+
+
+.ContentBorder1 {
+    font-family: Helvetica Neue LT Pro, sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.PegBar {
+    display: flex;
+    width: 1440px;
+    height: 26px;
+    align-self: flex-start;
+    justify-content: space-around;
+    margin-top: 2rem;
+    position: absolute;
+}
+
+.Acme1 {
+    width: 120px;
+    height: 26px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.Circle {
+    width: 26px;
+    height: 26px;
+    background: black;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.Acme2 {
+    width: 120px;
+    height: 26px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.Terminology {
+  font-size: 1.5rem;
+  color: red;
+  
+}
+
+.Title {
+  font-size: 2rem;
+  color: red;
+  
+}
+
