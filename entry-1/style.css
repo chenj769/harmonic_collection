@@ -13,47 +13,81 @@
 }
 
 
-body {
-    /* background-image: url(/assets/Intro.png); */
-}
+
 
 .Title {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: Helvetica Neue LT Pro, sans-serif;
   color: red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5b92c;
+    background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+    overflow: hidden;
 }
 
 .BackgroundContainer {
     display: flex;
-    width: 1440px;
-    height: 1024px;
-    background-color: #f5d595;
-    /* background-color: white; */
+    margin-top: 40px;
+    width: 72vw;
+    height: 42vw;
+    background-color: white;
     justify-content: center;
     align-items: center;
 }
+/* paper stack */
+.BackgroundContainer,
+.BackgroundContainer::before,
+.BackgroundContainer::after {
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  border: 1px solid #bbb;
+}
+
+.BackgroundContainer::before,
+.BackgroundContainer::after {
+  content: "";
+  position: absolute;
+  height: 72vw;
+  width: 42vw;
+  background-color: #eee;
+}
+
+.BackgroundContainer::before {
+  margin: 0 auto;
+  transform: rotate(-93deg);
+  z-index: -1;
+}
+
+.BackgroundContainer::after {
+  margin: 0 auto;
+  transform: rotate(-91deg);
+  z-index: -2;
+}
 
 .Container {
+    margin-top: 45px;
     display: flex;
+    flex-direction: column;
     border: 2px solid black;
-    width: 1200px;
-    height: 717px;
+    width: 60vw;
+    height: 32vw;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .Border1 {
     font-family: Helvetica Neue LT Pro, sans-serif;
     border: 1px dashed black;
-    width: 1030px;
-    height: 625px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
+    width: 90%;
+    height: 90%;
     padding: 1.5rem;
-    font-size: 1.6rem;
-    text-align: left;
-    
+    font-size: 1.2rem;    
 }
 
 
@@ -68,31 +102,65 @@ body {
 
 .PegBar {
     display: flex;
-    width: 1440px;
-    height: 26px;
+    position: absolute;
+    width: 60%;
+    height: 10%;
     align-self: flex-start;
     justify-content: space-around;
     margin-top: 2rem;
-    position: absolute;
 }
 
 .Acme1 {
-    width: 120px;
-    height: 26px;
-    background-color: black;
+    width: 7%;
+    height: 20%;
+    background-color: white;
     border-radius: 25px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.AcmePadding1 {
+    width: 5%;
+    height: 45%;
+    background-color: rgb(217, 217, 217, .8);
+    position: absolute;
+    top: -6%;
+    z-index: 0;
+}
+
+.AcmePadding2 {
+    width: 10%;
+    height: 45%;
+    background-color: rgb(217, 217, 217, .8);
+    position: absolute;
+    top: -6%;
+    left: 12.5%;
+    z-index: 0;
+}
+
+.AcmePadding3 {
+    width: 10%;
+    height: 45%;
+    background-color: rgb(217, 217, 217, .8);
+    position: absolute;
+    right: 12.5%;
+    top: -6%;
+    z-index: 0;
 }
 
 .Circle {
-    width: 26px;
-    height: 26px;
-    background: black;
+    width: 20px;
+    height: 20px;
+    background: white;
     clip-path: circle(50% at 50% 50%);
 }
 
 .Acme2 {
-    width: 120px;
-    height: 26px;
-    background-color: black;
+    width: 7%;
+    height: 20%;
+    background-color: white;
     border-radius: 25px;
+    position: relative;
+    z-index: 1;
 }
