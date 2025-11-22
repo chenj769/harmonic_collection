@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://use.typekit.net/hnf3snf.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* .BackgroundContainer:hover {
+  position: relative;
+  transform: scale(110%);
+  transition: 0.3s;
+} */
+
+img.Home:hover, img.Previous:hover, img.Next:hover {
+  transform: scale(110%);
+  transition: 0.3s;
+}
+
+.Sakuga:hover +.hide {
+  display: inline; 
+  position: relative;
+}
+
+.hide {
+  display: none;
+  font-size: 1.5rem;
+
+}
+
+.JP {
+  font-family: Noto Sans JP, sans-serif;
+  font-weight: 400;
+  color: red;
+}
+
+
+.Title {
+  font-size: 1.5rem;
+  font-family: Helvetica Neue LT Pro, sans-serif;
+  color: red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5b92c;
+    background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+    overflow: hidden;
+    position: relative;
+}
+
+.BackgroundContainer {
+    display: flex;
+    margin-top: 40px;
+    width: 72vw;
+    height: auto;
+    min-height: 42vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+/* paper stack */
+.BackgroundContainer,
+.BackgroundContainer::before,
+.BackgroundContainer::after {
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  border: 1px solid #bbb;
+}
+
+.BackgroundContainer::before,
+.BackgroundContainer::after {
+  content: "";
+  position: absolute;
+  top: -23%;
+  height: 72vw;
+  width: 42vw;
+  background-color: #eee;
+}
+
+.BackgroundContainer::before {
+  margin: 0 auto;
+  transform: rotate(-92deg);
+  z-index: -1;
+}
+
+.BackgroundContainer::after {
+  margin: 0 auto;
+  transform: rotate(-90deg);
+  z-index: -2;
+}
+/* paper stack end */
+.Container {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 60vw;
+    height: 32vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.Border1 {
+    font-family: Helvetica Neue LT Pro, sans-serif;
+    border: 1px dashed black;
+    width: 90%;
+    height: auto;
+    min-height: 90%;
+    padding: 1.5rem;
+    font-size: 1.2rem;    
+    overflow-y: auto;
+
+}
+
+
+.ContentBorder1 {
+    font-family: Helvetica Neue LT Pro, sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.PegBar {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    align-self: flex-start;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.Acme1 {
+    width: 7%;
+    height: 20%;
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.AcmePadding1 {
+    width: 5%;
+    height: 45%;
+    background-color: rgb(217, 217, 217, .8);
+    position: absolute;
+    top: -6%;
+    z-index: 0;
+}
+
+.AcmePadding2 {
+    width: 10%;
+    height: 45%;
+    background-color: rgb(217, 217, 217, .8);
+    position: absolute;
+    top: -6%;
+    left: 12.5%;
+    z-index: 0;
+}
+
+.AcmePadding3 {
+    width: 10%;
+    height: 45%;
+    background-color: rgb(217, 217, 217, .8);
+    position: absolute;
+    right: 12.5%;
+    top: -6%;
+    z-index: 0;
+}
+
+.Circle {
+    width: 20px;
+    height: 20px;
+    background: white;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.Acme2 {
+    width: 7%;
+    height: 20%;
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.ButtonControls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: absolute;
+  width: 90vw;
+  height: 8vw;
+  bottom: -8vw;
+}
+
+.Previous, .Home, .Next {
+  transition: all 1s ease;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 23%;
+  height: 100%;
+}
+
+.Terminology {
+font-family: Helvetica Neue LT Pro, sans-serif;
+  font-size: 1.2rem;
+  color: red;
+}

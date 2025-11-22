@@ -13,6 +13,33 @@
 }
 
 
+/* .BackgroundContainer:hover {
+  position: relative;
+  transform: scale(110%);
+  transition: 0.3s;
+} */
+
+img.Home:hover, img.Previous:hover, img.Next:hover {
+  transform: scale(110%);
+  transition: 0.3s;
+}
+
+.JP:hover +.hide {
+  display: inline; 
+  position: relative;
+}
+
+.hide {
+  display: none;
+  font-size: 1.5rem;
+
+}
+
+.Sakuga {
+  font-family: Noto Sans JP, sans-serif;
+  font-weight: 400;
+  color: red;
+}
 
 
 .Title {
@@ -27,14 +54,16 @@ body {
     align-items: center;
     background-color: #f5b92c;
     background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
 }
 
 .BackgroundContainer {
     display: flex;
     margin-top: 40px;
     width: 72vw;
-    height: 42vw;
+    height: auto;
+    min-height: 42vw;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -68,7 +97,7 @@ body {
   transform: rotate(-91deg);
   z-index: -2;
 }
-
+/* paper stack end */
 .Container {
     margin-top: 45px;
     display: flex;
@@ -76,18 +105,21 @@ body {
     border: 2px solid black;
     width: 60vw;
     height: 32vw;
+    min-height: 32vw;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .Border1 {
     font-family: Helvetica Neue LT Pro, sans-serif;
     border: 1px dashed black;
     width: 90%;
-    height: 90%;
+    height: auto;
+    min-height: 90%;
     padding: 1.5rem;
     font-size: 1.2rem;    
+    overflow-y: auto;
 }
 
 
@@ -164,3 +196,23 @@ body {
     position: relative;
     z-index: 1;
 }
+
+.ButtonControls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: absolute;
+  width: 90vw;
+  height: 8vw;
+  bottom: -8vw;
+}
+
+.Previous, .Home, .Next {
+  transition: all 1s ease;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 23%;
+  height: 100%;
+}
+
