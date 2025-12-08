@@ -19,6 +19,12 @@
   transition: 0.3s;
 } */
 
+.Excerpt {
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
 img.Home:hover, img.Previous:hover, img.Next:hover {
   transform: scale(110%);
   transition: 0.3s;
@@ -34,7 +40,6 @@ img.Home:hover, img.Previous:hover, img.Next:hover {
   font-size: 1.5rem;
 
 }
-
 .JP {
   font-family: Noto Sans JP, sans-serif;
   font-weight: 400;
@@ -45,24 +50,6 @@ img.Home:hover, img.Previous:hover, img.Next:hover {
 .Title {
   font-size: 1.5rem;
   font-family: Helvetica Neue LT Pro, sans-serif;
-  color: red;
-}
-
-.Checks {
-    font-size: 1.2rem;
-    list-style-position: inside;
-    text-indent: 1.5rem;
-}
-
-.LowerList {
-  font-size: 1rem;
-  text-indent: 50px;
-  list-style-position: inside;
-}
-
-.Terminology {
-font-family: Helvetica Neue LT Pro, sans-serif;
-  font-size: 1.2rem;
   color: red;
 }
 
@@ -107,23 +94,15 @@ body {
 
 .BackgroundContainer::before {
   margin: 0 auto;
-  transform: rotate(-92deg);
+  transform: rotate(91deg);
   z-index: -1;
-}
-
-.BackgroundContainer::before {
-  margin: 0 auto;
-  transform: rotate(95deg);
-  z-index: -3;
 }
 
 .BackgroundContainer::after {
   margin: 0 auto;
-  transform: rotate(-90deg);
+  transform: rotate(-89deg);
   z-index: -2;
 }
-
-
 /* paper stack end */
 .Container {
     margin-top: 45px;
@@ -241,4 +220,10 @@ body {
   align-content: center;
   width: 23%;
   height: 100%;
+}
+
+.Terminology {
+font-family: Helvetica Neue LT Pro, sans-serif;
+  font-size: 1.2rem;
+  color: red;
 }
