@@ -113,7 +113,7 @@ body {
 
 .BackgroundContainer::after {
   margin: 0 auto;
-  transform: rotate(-74deg);
+  transform: rotate(-80deg);
   z-index: -2;
 }
 

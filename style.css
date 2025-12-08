@@ -26,6 +26,10 @@
   display: none;
 }
 
+.Next, .Back {
+  display: none;
+}
+
 body {
 /*   overflow: hidden; */
   /* height: 50vw; */
@@ -382,22 +386,22 @@ a:link {
     font-size: 0.9rem;
   }
   .Next {
+    display: block;
     width: 4.5vw;
     height: 4.5vw;
     position: absolute;
     top: 3%;
     right: 5%;
-    background-color: white;
     border: 1px solid black;
   }
 
   .Back {
+    display: block;
     width: 4.5vw;
     height: 4.5vw;
     position: absolute;
     top: 3%;
     right: 5%;
-    background-color: white;
     border: 1px solid black;
   }
 
@@ -412,6 +416,11 @@ a:link {
     margin-bottom: 5%;
   }
   #img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #random_layout, #random_layout2, #random_layout3, #random_layout4, #random_layout5 {
     width: 100%;
     height: 100%;
   }

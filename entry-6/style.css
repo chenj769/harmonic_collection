@@ -12,12 +12,78 @@
   padding: 0;
 }
 
-
-/* .BackgroundContainer:hover {
+.animator_name {
   position: relative;
-  transform: scale(110%);
-  transition: 0.3s;
-} */
+  flex: 1;
+}
+
+.tooltip-text {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1000;
+  background-color: #F5D595;
+  border: 1px solid black;
+  width: 10vw;
+  height: 4vw;
+  font-weight: 500;
+  padding: 5%;
+}
+
+.tooltip-text1 {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1000;
+  background-color: #F5D595;
+  border: 1px solid black;
+  width: 10vw;
+  height: 4vw;
+  font-weight: 500;
+  padding: 5%;
+}
+
+.animator_name:hover .tooltip-text {
+  visibility: visible;
+  top: 5%;
+  left: 110%;
+}
+
+
+
+.animator_name:hover .tooltip-text1 {
+  visibility: visible;
+  top: 5%;
+  right: 110%;
+}
+
+.tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 18%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip-text1::after {
+  content: " ";
+  position: absolute;
+  top: 18%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
 
 img.Home:hover, img.Previous:hover, img.Next:hover {
   transform: scale(110%);
@@ -48,13 +114,31 @@ img.Home:hover, img.Previous:hover, img.Next:hover {
   color: red;
 }
 
+.Checks {
+    font-size: 1.2rem;
+    list-style-position: inside;
+    text-indent: 1.5rem;
+}
+
+.LowerList {
+  font-size: 1rem;
+  text-indent: 50px;
+  list-style-position: inside;
+}
+
+.Terminology {
+font-family: Helvetica Neue LT Pro, sans-serif;
+  font-size: 1.2rem;
+  color: red;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f5b92c;
     background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
@@ -89,15 +173,17 @@ body {
 
 .BackgroundContainer::before {
   margin: 0 auto;
-  transform: rotate(-92deg);
-  z-index: -1;
+  transform: rotate(100deg);
+  z-index: -3;
 }
 
 .BackgroundContainer::after {
   margin: 0 auto;
-  transform: rotate(-90deg);
+  transform: rotate(-123deg);
   z-index: -2;
 }
+
+
 /* paper stack end */
 .Container {
     margin-top: 45px;
@@ -112,15 +198,20 @@ body {
 }
 
 .Border1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2%;
+  text-align: center;
     font-family: Helvetica Neue LT Pro, sans-serif;
     border: 1px dashed black;
     width: 90%;
-    height: auto;
+    height: 100%;
     min-height: 90%;
     padding: 1.5rem;
     font-size: 1.2rem;    
-    overflow-y: auto;
-
+    overflow-x: auto;
 }
 
 
@@ -217,8 +308,7 @@ body {
   height: 100%;
 }
 
-.Terminology {
-font-family: Helvetica Neue LT Pro, sans-serif;
-  font-size: 1.2rem;
-  color: red;
-}
+
+
+
+
