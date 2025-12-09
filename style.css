@@ -42,6 +42,25 @@ body {
   background-color: white;
 }
 
+.ekonte-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 9.5%;
+  right: 20.5%;
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  padding: 1%;
+  border: 2px solid #98ad82;
+}
+
+
+#ekonte-svg {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
 .box1 * {
   align-content: center;
   font-size: 1em;
@@ -357,11 +376,7 @@ a:link {
   .b2box-11c {
     font-size: 0.5rem;
   }
-}
-
-/* xs */
-@media (max-width: 475px) {
-  .cutbag {
+   .cutbag {
     display: none;
   }
   .cut-div {
@@ -386,7 +401,9 @@ a:link {
     font-size: 0.9rem;
   }
   .Next {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 4.5vw;
     height: 4.5vw;
     position: absolute;
@@ -485,3 +502,4 @@ a:link {
     align-items: center;
   }
 }
+

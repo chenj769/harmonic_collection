@@ -51,16 +51,18 @@ img.Home:hover, img.Previous:hover, img.Next:hover {
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 6vh;
+    width: 100vw;
+    height: 100vh;
     background-color: #f5b92c;
     background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
 
 .BackgroundContainer {
     display: flex;
-    margin-top: 40px;
     width: 72vw;
     height: auto;
     min-height: 42vw;
@@ -197,15 +199,7 @@ body {
     z-index: 1;
 }
 
-.ButtonControls {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  position: absolute;
-  width: 90vw;
-  height: 8vw;
-  bottom: -8vw;
-}
+
 
 .Previous, .Home, .Next {
   transition: all 1s ease;
@@ -216,3 +210,115 @@ body {
   height: 100%;
 }
 
+/* media queries */
+
+.container {
+  max-width: 1536px;
+  margin-left: auto; 
+  margin-right: auto; 
+  padding-left: 0.5rem; 
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .Border1 {
+    font-size: 1.2rem;
+  }
+  .Title {
+    font-size: 1.2rem;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .Border1 {
+    font-size: 1rem;
+  }
+  .Title {
+    font-size: 1.1rem;
+  }
+}
+
+/* 942 */
+@media (max-width: 942px) {
+  .container {
+    max-width: 768px;
+  }
+   .Border1 {
+    font-size: 1rem;
+  }
+}
+
+/* 865 */
+@media (max-width: 865px) {
+   .Border1 {
+    font-size: 1rem;
+  }
+  .Title {
+    font-size: 1.1rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  .Title {
+    font-size: 1.1rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+.BackgroundContainer {
+  width: 88vw; 
+  height: 72vh;
+}
+.Container {
+  width: 90%;
+  height: 64%;
+}
+}
+
+/* xs */
+@media (max-width: 475px) {
+.BackgroundContainer {
+  width: 88vw; 
+  height: 72vh;
+}
+.Container {
+  width: 90%;
+  height: 64%;
+}
+}
+
+.ButtonControls {
+  position: fixed; 
+  left: 0;
+  bottom: 4vh;
+  width: 100vw;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Previous, .Home, .Next {
+  width: 20vw;
+  max-width: 120px;
+  height: 6vh;
+  aspect-ratio: 1;
+}

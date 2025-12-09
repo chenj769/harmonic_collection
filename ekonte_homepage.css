@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://use.typekit.net/hnf3snf.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.NotoSansJP {
+  font-family: Noto Sans JP, sans-serif;
+  font-weight: 500;
+  color: red;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.cutbag {
+    display: none;
+  }
+  .cut-div {
+    display: none;
+  }
+  .ekonte_bg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+  .No_line {
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 32.5%;
+    width: 35vw;
+    border-bottom: 1px solid black;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .Next {
+    display: block;
+    width: 4.5vw;
+    height: 4.5vw;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    border: 1px solid black;
+  }
+
+  .Back {
+    display: block;
+    width: 2.2vw;
+    height: 1.9vw;
+    position: absolute;
+    top: 5.7%;
+    right: 30%;
+    border: 1px solid black;
+  }
+
+  .switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  width: 2%;
+  height: 2%;
+  padding: 1%;
+  border: 1px solid black;
+}
+
+#ekonte-svg {
+    width:1.5vw;
+    height:1.5vw;
+}
+
+  .ekonte_container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 35vw;
+    height: 85vh;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    margin-bottom: 5%;
+  }
+  #img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #random_layout, #random_layout2, #random_layout3, #random_layout4, #random_layout5 {
+    width: 100%;
+    height: 100%;
+  }
+  .ekonte:first-child {
+    width: 90vw;
+    border-bottom: 1px solid black;
+    height: 3%;
+    font-size: 0.7rem;
+  }
+  .ekonte {
+    display: flex;
+    width: 90vw;
+    height: 19.4%;
+    border-bottom: 1px solid black;
+    font-family: Helvetica, sans-serif;
+  }
+  .ekonte1:nth-child(1) {
+    width: 5%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ekonte1:nth-child(2) {
+    
+    width: 50%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .ekonte1:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    border-right: 1px solid black;
+  }
+  .ekonte1:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-right: 1px solid black;
+  }
+  .SC {
+    font-size: 0.8rem;
+  }
+  .dialog1, .dialog2, .dialog3, .dialog4, .dialog5 {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  
+  .ekonte1:nth-child(5) {
+    width: 7%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
